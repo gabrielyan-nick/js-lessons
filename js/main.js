@@ -29,13 +29,50 @@
 //     console.log(decr);
 //     console.log(incr);
     
-console.log(10%4);
+// console.log(10%4);
 
-console.log(6*4 == 24);
+// console.log(6*4 == 24);
 
 
-const isChecked = true,
-      isClose = true,
-      isFuck = true;
+// const isChecked = true,
+//       isClose = true,
+//       isFuck = true;
 
-      console.log(isChecked && isClose && isFuck);
+//       console.log(isChecked && isClose && isFuck);
+if (4 == 9) {
+    console.log('Ok!');
+} else {
+    console.log('error');
+}
+
+const num = 47;
+
+if (num > 48) {
+    console.log('error');
+} else if (num < 46) {
+    console.log('error');
+} else if (num !== 46) {
+    console.log('Nooo');
+} else {
+    console.log('OK');
+}
+
+(num !== 47) ? console.log('ok') : console.log('error');
+
+
+const abc = 69;
+
+switch (abc) {
+    case 68:
+        console.log('No');
+        break;
+    case 70:
+        console.log('No');
+        break;
+    case 64:
+        console.log('Yes');
+        break;
+    default:
+        console.log('Try again');
+        break;
+    }
