@@ -24,28 +24,34 @@
 // updateAllowance();
 
 
-const select = document.querySelector('select');
-const para = document.querySelector('p');
+// const select = document.querySelector('select');
+// const para = document.querySelector('p');
 
-select.onchange = setWeather;
+// select.onchange = setWeather;
 
-function setWeather() {
-    const choise = select.value;
+// function setWeather() {
+//     const choise = select.value;
 
-    switch (choise) {
-    case 'sunny': 
-        para.textContent = "It's sunny today. Go to the beatch and take ice cream.";
-        break;
-    case 'rainy': 
-        para.textContent = 'Rainy outside the window. Take an ambrella or stay home.';
-        break;
-    case 'snowing': 
-        para.textContent = 'Snowing and cold. Make a cup of hot tea and relax.';
-        break;
-    case 'overcast':
-        para.textContent = 'A lot of clouds in the sky. Make sure that you take an amrella.';
-        break;
-        default:
-        para.textContent = '';
-    }
-}
+//     switch (choise) {
+//     case 'sunny': 
+//         para.textContent = "It's sunny today. Go to the beatch and take ice cream.";
+//         break;
+//     case 'rainy': 
+//         para.textContent = 'Rainy outside the window. Take an ambrella or stay home.';
+//         break;
+//     case 'snowing': 
+//         para.textContent = 'Snowing and cold. Make a cup of hot tea and relax.';
+//         break;
+//     case 'overcast':
+//         para.textContent = 'A lot of clouds in the sky. Make sure that you take an amrella.';
+//         break;
+//         default:
+//         para.textContent = '';
+//     }
+// }
+
+
+// let nick = prompt('What is your name?', '');
+// alert(`you are ${nick}.`);
+
+alert(+'3');
