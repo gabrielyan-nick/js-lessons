@@ -54,4 +54,3 @@
 // let nick = prompt('What is your name?', '');
 // alert(`you are ${nick}.`);
 
-alert(+'3');
