@@ -380,7 +380,6 @@
 // const c3 = increment();
 // console.log("example increment", c1, c2, c3);
 
-
 // let c = 4
 // function addX(x) {
 //   return function(n) {
@@ -390,3 +389,102 @@
 // const addThree = addX(3)
 // let d = addThree(c)
 // console.log('example partial application', d)
+
+// function sayHello(name) {
+//     return `Hello, ${name}`;
+// }
+// sayHello('Nick');
+
+// function returnNeighboringNumbers(num) {
+//     return arr = [num - 1, num, num + 1];
+
+// }
+
+// returnNeighboringNumbers(10);
+// console.log(arr);
+
+// function getMathResult (num, times) {
+//     if (typeof(times) !== 'number' || times <= 0) {
+//         return num;
+//     }
+//     let str = '';
+//     for (let i = 0; i <= times; i++) {
+//         if (i === times) {
+//             str += `${num * i}`;
+//         } else {
+//             str += `${num * i}---`;
+//         }
+//     }
+//     return str;
+// }
+// getMathResult(4, 9);
+// console.log(getMathResult(4,9));
+
+// const usdCur = 30;
+// const eurCur = 35;
+// const discont = 0.9;
+
+// function convert(amount, cur) {
+//     return  amount * cur;
+// }
+// function promo(result) {
+//     console.log(result * discont + ' грн.');
+// }
+// const res = convert(100, usdCur);
+// promo(res);
+
+// function test() {
+//   for (let i = 0; i < 10; i++) {
+//     console.log(i);
+//     if (i === 7) return;
+//   } 
+// }
+// test();
+
+// const fruit = 'some fruit';
+// console.log(fruit.indexOf('w'));
+
+// const logg = '123456789';
+// console.log(logg.slice(2));
+
+
+// const num = 15.4;
+// console.log(Math.round(num));
+
+
+// const str = 'hello';
+// console.log(str[str.length - 1]);
+
+// let str = "hello";
+// str = 'H' + str.slice(1);
+// console.log(str);
+
+// let str = 'i love you, you';
+// console.log( str.indexOf('you', 2));
+
+// function ucFirst(str) {
+//     if (!str) return str;
+//     return str[0].toUpperCase() + str.slice(1);
+// }
+// console.log(ucFirst('коля'));
+
+
+// function checkSpam(str) {
+//     let lowerStr = str.toLowerCase();
+//     return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+// }
+// console.log(checkSpam('free xxxxx'));
+
+
+// function truncate(str, maxlength) {
+//     if (str.length > maxlength) {
+//        return str.slice(0, maxlength) + '...';
+//     }
+
+// }
+// console.log(truncate("Вот, что мне хотелось бы сказать на эту тему:", 20));
+
+// function extractCurrencyValue(str) {
+//     return +str.slice(1);
+// }
+// console.log(extractCurrencyValue('!297'));
