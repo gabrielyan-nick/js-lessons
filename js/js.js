@@ -437,7 +437,7 @@
 //   for (let i = 0; i < 10; i++) {
 //     console.log(i);
 //     if (i === 7) return;
-//   } 
+//   }
 // }
 // test();
 
@@ -447,10 +447,8 @@
 // const logg = '123456789';
 // console.log(logg.slice(2));
 
-
 // const num = 15.4;
 // console.log(Math.round(num));
-
 
 // const str = 'hello';
 // console.log(str[str.length - 1]);
@@ -468,13 +466,11 @@
 // }
 // console.log(ucFirst('коля'));
 
-
 // function checkSpam(str) {
 //     let lowerStr = str.toLowerCase();
 //     return lowerStr.includes('viagra') || lowerStr.includes('xxx');
 // }
 // console.log(checkSpam('free xxxxx'));
-
 
 // function truncate(str, maxlength) {
 //     if (str.length > maxlength) {
@@ -488,3 +484,109 @@
 //     return +str.slice(1);
 // }
 // console.log(extractCurrencyValue('!297'));
+
+// function calculateVolumeAndArea(length) {
+//   if (
+//     typeof length !== "number" ||
+//     length < 0 ||
+//     Number.isInteger(length) === false
+//   ) {
+//     console.log("При вычислении произошла ошибка");
+//   } else {
+//     let volume = length * length * length;
+//     let area = 6 * length * length;
+
+//     console.log(`Объем куба: ${volume}, площадь всей поверхности: ${area}`);
+//   }
+// }
+// calculateVolumeAndArea(5);
+
+// function getCoupeNumber(num) {
+//   if (typeof num !== "number" || num < 0 || !Number.isInteger(num)) {
+//     return "Ошибка. Проверьте правильность введенного номера места";
+//   }
+//   if (num === 0 || num > 36) {
+//     return "Таких мест в вагоне не существует";
+//   }
+//   for (let i = 4; i <= 36; i = i + 4) {
+//     if (num <= i) {
+//       return Math.ceil(i / 4);
+//     }
+//   }
+// }
+// console.log(getCoupeNumber(4));
+
+// function getTimeFromMinutes(minTotal) {
+//     if (typeof(minTotal) !== 'number' || minTotal < 0 || !Number.isInteger(minTotal)) {
+//         return "Ошибка, проверьте данные";
+//     }
+//     const hours = Math.floor(minTotal / 60);
+//     const min = minTotal % 60;
+//     let hoursStr = '';
+//     let minStr = '';
+
+//     switch (hours) {
+//         case 1:
+//             hoursStr = 'час';
+//             break;
+//         case 2:
+//         case 3:
+//         case 4:
+//             hoursStr = 'часа';
+//             break;
+//         default:
+//             hoursStr = 'часов';
+//     }
+//     switch (min) {
+//         case 1:
+//             minStr = 'минута';
+//             break;
+//         case 2:
+//         case 3:
+//         case 4:
+//             minStr = 'минуты';
+//             break;
+//         default:
+//             minStr = 'минут';
+//     }
+//     return `Это ${hours} ${hoursStr} и ${min} ${minStr}`;
+// }
+// console.log(getTimeFromMinutes(2562));
+
+// function findMaxNumber(a, b, c, d) {
+//   if (
+//     typeof a !== "number" ||
+//     typeof b !== "number" ||
+//     typeof c !== "number" ||
+//     typeof d !== "number"
+//   ) {
+//     return 0;
+//   } else {
+//     return Math.max(a, b, c, d);
+//   }
+// }
+// console.log(findMaxNumber(1, 65, 455, "766"));
+
+function fib(num) {
+    if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+        return '';
+    }
+
+    let result = '';
+    let first = 0;
+    let second = 1;
+    
+
+    for (let i = 0; i < num; i++) {
+        if (i + 1 === num) {
+            result += `${first}`;
+        } else {
+            result += `${first} `;
+        }
+        let third = first + second;
+        first = second;
+        second = third;
+    }
+        return result;
+}
+console.log(fib(17));
