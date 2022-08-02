@@ -567,26 +567,211 @@
 // }
 // console.log(findMaxNumber(1, 65, 455, "766"));
 
-function fib(num) {
-    if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
-        return '';
-    }
+// function fib(num) {
+//     if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+//         return '';
+//     }
 
-    let result = '';
-    let first = 0;
-    let second = 1;
-    
+//     let result = '';
+//     let first = 0;
+//     let second = 1;
 
-    for (let i = 0; i < num; i++) {
-        if (i + 1 === num) {
-            result += `${first}`;
-        } else {
-            result += `${first} `;
-        }
-        let third = first + second;
-        first = second;
-        second = third;
-    }
-        return result;
-}
-console.log(fib(17));
+//     for (let i = 0; i < num; i++) {
+//         if (i + 1 === num) {
+//             result += `${first}`;
+//         } else {
+//             result += `${first} `;
+//         }
+//         let third = first + second;
+//         first = second;
+//         second = third;
+//     }
+//         return result;
+// }
+// console.log(fib(17));
+
+// function learnJS(str, callback) {
+//     console.log(`I am learning ${str}.`);
+//     callback();
+// }
+// learnJS('JavaScript', function() {
+//     console.log('I am done.');
+// });
+
+// const options = {
+//   name: "test",
+//   width: 1024,
+//   height: 1024,
+//   colors: {
+//     border: "black",
+//     bg: "red",
+//   },
+//   makeTest: function() {
+//     console.log('test');
+//   }
+// };
+
+// // options.makeTest();
+
+// const {border, bg} = options.colors;
+// console.log(border);
+
+// console.log(options);
+
+// console.log(Object.keys(options).length);
+
+// console.log(options['colors']['bg']);
+// delete options.colors.bg;
+// console.log(options);
+
+// let counter = '0';
+// for (let qwe in options) {
+//   if (typeof options[qwe] === "object") {
+//     for (let i in options[qwe]) {
+//       console.log(`Свойство ${i} имеет значение ${options[qwe][i]}`);
+      
+//     }
+//   } else {
+//     console.log(`Свойство ${qwe} имеет значение ${options[qwe]}`);
+//     counter++;
+//   }
+// }
+// console.log(counter);
+
+// const obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3,
+//     d: 4,
+//     e: 5,
+//     f: {
+//         q: 6,
+//         w: 7
+//     }
+// };
+// console.log(Object.keys(obj).length);
+
+// const user = {};
+// user.name = 'John';
+// user.surname = 'Smith';
+// user.name = 'Pete';
+// delete user.name;
+
+// function isEmpty(obj) {
+//     for (let key in obj) {
+//         return false;
+//     }
+//     return true;
+// }
+// isEmpty(user);
+// console.log(isEmpty(user));
+
+
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+//   };
+//   let sum = 0;
+
+//   for (let key in salaries) {
+//     sum += salaries[key];
+//   }
+//   console.log(sum);
+
+//   let menu = {
+//     width: 200,
+//     height: 300,
+//     title: "My menu"
+//   };
+
+//   function multiplyNumeric(obj) {
+//     for (let key in obj) {
+//         if (typeof(obj[key]) == 'number') {
+//             obj[key] *= 2;
+//         }
+//     }
+//   }
+//   multiplyNumeric(menu);
+//   console.log(menu);
+
+// function User(fullName) {
+//     this.fullName = fullName;
+
+//     Object.defineProperties(this, {
+//         firstName: {
+//             get: function() {
+//                 return this.fullName.split(' ')[0];
+//             },
+//             set: function(newFirstName) {
+//                 this.fullName = newFirstName + ' ' + this.lastName;
+//             }
+//         },
+//         lastName: {
+//             get: function() {
+//                 return this.fullName.split(' ')[1];
+//             },
+//             set: function(newLastName) {
+//                 this.fullName = this.firstName + ' ' + newLastName;
+//             }
+//         }
+//     });
+//   }
+
+//   let vasya = new User('Василий Пупкин');
+//   vasya.lastName = 'Жопин';
+//   console.log(vasya.fullName);
+
+// function makeNegative(num) {
+//     if (num <= 0) {
+//       return num;
+//     } return num = -num;
+//   }
+//   console.log(makeNegative(16));
+
+// function positiveSum(arr) {
+//     let total = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i] > 0) {
+//         total += arr[i];
+//       }
+//     }
+//     return total;
+//   }
+//   console.log(positiveSum([2, -8, 56, -2, 4, -7, 3]));
+
+// function countBy(x, n) {
+//     let z = [];
+//   for (let i = 1; i <= n; i++) {
+//     z.push(i * x);
+//   }
+//     return z;
+//   }
+//   console.log(countBy(5, 6));
+
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//     return distanceToPump/mpg <= fuelLeft;
+//   };
+//   console.log(zeroFuel(50,25,1));
+
+// function century(year) {
+//     return Math.ceil(year / 100);
+//   }
+//   console.log(century(735));
+
+// function mult(a, b) {
+//     return result = a * b;
+// }
+// console.log(mult(5, 4));
+
+// function digitize(n) {
+//     if (typeof(n) === 'number' && n > 0) {
+//      return Array.from(String(n), Number).reverse();
+//   }
+// }
+//   console.log(digitize(23588));
+
+// function booleanToString(b){
+//     return b.toString();
+// }
+// console.log(booleanToString(true));
