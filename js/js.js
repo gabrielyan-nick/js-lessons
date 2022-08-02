@@ -629,7 +629,7 @@
 //   if (typeof options[qwe] === "object") {
 //     for (let i in options[qwe]) {
 //       console.log(`Свойство ${i} имеет значение ${options[qwe][i]}`);
-      
+
 //     }
 //   } else {
 //     console.log(`Свойство ${qwe} имеет значение ${options[qwe]}`);
@@ -665,7 +665,6 @@
 // }
 // isEmpty(user);
 // console.log(isEmpty(user));
-
 
 // let salaries = {
 //     John: 100,
@@ -775,3 +774,172 @@
 //     return b.toString();
 // }
 // console.log(booleanToString(true));
+
+// function even_or_odd(number) {
+//   if (number % 2 == 0) {
+//     return 'Even';
+// } return 'Odd';
+// }
+// console.log(even_or_odd(243));
+
+// function greet() {
+//     return "Hello world";
+// }
+// console.log(greet());
+
+// const arr = [1, 5, 6, 2, -42];
+
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} внутри массива ${arr}`);
+// });
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// for (let val of arr) {
+//     console.log(val);
+// }
+
+// const str = 'hnst astgt ubu iniu niun';
+// const products = str.split(' ');
+// console.log(products.join('<>'));
+
+// let obj = {
+//     a: 4,
+//     b: 2,
+// };
+
+// const newNumbers = copy(numbers);
+
+// function copy(mainObj) {
+//     let objCopy = {};
+//     let key;
+//     for (key in mainObj) {
+//         objCopy[key] = mainObj[key];
+//     }
+//     return objCopy;
+// }
+
+// newNumbers.b = 12;
+// console.log(newNumbers);
+// console.log(numbers);
+
+// const add = {
+//     q: 5,
+//     r: 98
+// };
+
+// // console.log(Object.assign(numbers, add));
+
+// const clone = Object.assign({}, add);
+// clone.q = 6;
+
+// console.log(add);
+// console.log(clone);
+
+// const oldArr = ['a', 'g', 'c'];
+// const newArr = oldArr.slice();
+
+// newArr[0] = 3;
+// console.log(newArr);
+// console.log(oldArr);
+
+// const video = ['dfsd', 'dfb', 'wer'],
+//         blogs = ['ssgv', 'sgv', 'r34r43'],
+//         internet = [...video, ...blogs, 352345];
+
+//         console.log(internet);
+
+// function log(a, b, c) {
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
+
+// const num = [324, 'sdf', 'das'];
+// log(...num);
+
+// const personalPlanPeter = {
+//   name: "Peter",
+//   age: "29",
+//   skills: {
+//     languages: ["ru", "eng"],
+//     programmingLangs: {
+//       js: "20%",
+//       php: "10%",
+//     },
+//     exp: "1 month",
+//   },
+//   showAgeAndLangs: function (plan) {
+//     const { age } = plan;
+//     const { languages } = plan.skills;
+//     let str = `Мне ${age} и я владею языками: `;
+
+//     languages.forEach(function (lang) {
+//       str += `${lang.toUpperCase()} `;
+//     });
+//     return str;
+//   },
+// };
+// personalPlanPeter.showAgeAndLangs(personalPlanPeter);
+
+// function showExperience(plan) {
+//   const { exp } = plan.skills;
+//   return exp;
+// }
+// console.log(showExperience(personalPlanPeter));
+
+// function showProgrammingLangs(plan) {
+//   let str = "";
+//   const { programmingLangs } = plan.skills;
+//   for (let key in programmingLangs) {
+//     str += `Язык ${key} изучен на ${programmingLangs[key]}\n`;
+//   }
+//   return str;
+// }
+// console.log(showProgrammingLangs(personalPlanPeter));
+
+// const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+// const asd = [];
+
+// function showFamily(arr) {
+//     if (!!arr.length == true) {
+//         return `Семья состоит из: ${arr.join(' ')}`;
+//     } return 'Семья пуста';
+// }
+// console.log(showFamily(family));
+
+// const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+
+// function standardizeStrings(arr) {
+//     console.log(arr.join('\n').toLowerCase());
+// }
+// standardizeStrings(favoriteCities);
+
+// const someString = 67;
+
+// function reverse(str) {
+//     if (typeof(str) !== 'string') {
+//         return 'Ошибка!';
+//     }
+//     return str.split('').reverse().join('');
+// }
+// console.log(reverse(someString));
+
+// const baseCurrencies = ['USD', 'EUR'];
+// const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+   
+// function availableCurr(arr, missingCurr) {
+//     let str = '';
+
+//     arr.length !== 0 ? str = 'Доступные валюты:\n' : str = 'Нет доступных валют';
+
+//     arr.forEach(function(curr) {
+//         if (curr !== missingCurr) {
+//             str += `${curr}\n`
+//         }
+//     });
+//     return str;
+// }
+// console.log(availableCurr([...baseCurrencies, ...additionalCurrencies], 'RUB'));
