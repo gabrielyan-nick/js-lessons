@@ -929,7 +929,7 @@
 
 // const baseCurrencies = ['USD', 'EUR'];
 // const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
-   
+
 // function availableCurr(arr, missingCurr) {
 //     let str = '';
 
@@ -943,3 +943,69 @@
 //     return str;
 // }
 // console.log(availableCurr([...baseCurrencies, ...additionalCurrencies], 'RUB'));
+
+// const quarterOf = (month) => {
+//     return Math.ceil(month / 4);
+//   }
+//   console.log(function(11));
+
+//   function quarterOf(month) {
+//     return Math.ceil(month / 3);
+//   }
+//   console.log(quarterOf(3));
+
+// const soldier = {
+//     health: 300,
+//     armor: 200,
+//     weapon: ['m16', 'gun']
+// };
+// let clone = Object.create(Object.getPrototypeOf(soldier), Object.getOwnPropertyDescriptors(soldier));
+
+// // const John = Object.create(soldier);
+// // const John = {
+// //     health: 200,
+// //     weapon: []
+// // }
+
+// // Object.setPrototypeOf(John, soldier);
+// console.log(clone);
+
+// const shoppingMallData = {
+//     shops: [
+//         {
+//             width: 10,
+//             length: 5
+//         },
+//         {
+//             width: 15,
+//             length: 7
+//         },
+//         {
+//             width: 20,
+//             length: 5
+//         },
+//         {
+//             width: 8,
+//             length: 10
+//         }
+//     ],
+//     height: 5,
+//     moneyPer1m3: 30,
+//     budget: 50250
+// }
+
+// function isBudgetEnough(data) {
+//     let square = 0;
+//     let volume = 0;
+
+//     data.shops.forEach((item) => {
+//         square += item.width * item.length;
+//     });
+//     volume = square * data.height;
+//     if (volume * data.moneyPer1m3 <= data.budget) {
+//         return 'Бюджета достаточно';
+//     } else {
+//         return 'Бюджета недостаточно';
+//     }
+// }
+// console.log(isBudgetEnough(shoppingMallData));
