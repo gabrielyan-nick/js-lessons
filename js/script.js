@@ -119,3 +119,29 @@
 // endZeros(100);
 
 // console.log('45007909000'.match(/[0]*$/)[0].length);
+
+// function removeAllBefore(arr, num) {
+//   let i = arr.indexOf(num);
+
+//   if (arr.includes(num) === false) {
+//     return arr;
+//   } if (arr.length === 0) {
+//     return [];
+//   } else {
+//     return arr.slice(i);
+//   }
+// }
+
+// console.log(removeAllBefore([10,1,5,6,7,10],5));
+
+const btn = document.querySelector('button');
+
+const changeColor = (e) => {
+    if (e.target.style.backgroundColor === 'aqua') {
+        e.target.style.backgroundColor = "green";
+    } else {
+        e.target.style.backgroundColor = 'aqua';
+    }
+};
+
+btn.addEventListener('click', changeColor,);

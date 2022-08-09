@@ -1115,10 +1115,68 @@
 
 // transferWaitors(restorantData);
  
-function numberLength(value) {
-    return value.toString.length;
-}
+// function numberLength(value) {
+//     return value.toString().length;
+// }
 
 
-console.log(numberLength(10342));
+// console.log(numberLength(10342));
+
+// function isAllUpper(text) {
+//     if (text.toUpperCase() === text || text.length === 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+    
+// }
+
+// console.log(isAllUpper(''));
+
+// function replaceFirst(arr) {
+//     console.log(  arr.push(arr.shift())       );   
+// }
+// replaceFirst([1, 2, 3, 4]);
+
+// function maxDigit(value) {
+//    return Math.max(...Array.from(String(value)).map(i => Number(i))) ; 
+// }
+
+// console.log(maxDigit(0));
+
+// box.style.backgroundColor = 'green';
+// box.style.width = '333px';
+// box.style.cssText = 'background-color: black; width: 400px; border-radius: 30%;';
+
+// btns[2].style.borderRadius = '50%';
+
+// hearts.forEach(item => {
+//     item.style.backgroundColor = 'green';
+// });
+
+// const div = document.createElement('div');
+// // const text = document.createTextNode('qwerty');
+
+// div.classList.add('black');
+
+// circles[1].before(div);
+// btns[3].remove();
+// // btns[1].replaceWith(oneHeart);
+
+// div.innerHTML = '<ul><li>asd</li><li>asd</li><li>asda</li></ul>';
+
+// btns[2].insertAdjacentHTML('afterend', '<a href="https://google.com">dbg</a>');
+
+// function splitPairs(text) {
+//     let arr = text.split('');
+//     if (arr.length === 0) {
+//         return [];
+//     } if (arr.length % 2 !== 0) {
+//       arr.push('_');
+//       return arr.join('').match(/../g);
+//     } else {
+//         return arr.join('').match(/../g);
+//     }
+// }
+// console.log(splitPairs(''));
 
