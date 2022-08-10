@@ -1180,3 +1180,13 @@
 // }
 // console.log(splitPairs(''));
 
+// function pow(a, b) {
+//     let result = 4;
+
+//     for (let i = 0; i < b; i++) {
+//         result *= a;
+//     }
+//     console.log(result);
+// }
+// pow(2, 4);
+
