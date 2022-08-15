@@ -1190,3 +1190,37 @@
 // }
 // pow(2, 4);
 
+// var array1 = [true,  true,  true,  false,
+//     true,  true,  true,  true ,
+//     true,  false, true,  false,
+//     true,  false, false, true ,
+//     true,  true,  true,  true ,
+//     false, false, true,  true ];
+
+// function countSheeps(arrayOfSheep) {
+//     let count = 0;
+   
+//     arrayOfSheep.forEach(item => {
+//         if (item == true) 
+//         count++;
+//     });
+//     console.log(count);
+//   }
+// countSheeps(array1);
+
+// function countSheep(num) {
+//     let str = '';
+//     for (let i = 1; i <= num; i++) {
+//         str += `${i} sheep...`;
+
+//     }
+//     console.log(str);
+// }
+// countSheep(5);
+
+function sumOfDifferences(arr) {
+   arr = arr.sort((a, b) => b - a);
+   console.log(arr);
+    console.log(arr[0] - arr[1]) + (arr[1] - arr[2]);
+}
+sumOfDifferences([2, 1, 10]);

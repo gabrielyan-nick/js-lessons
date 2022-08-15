@@ -217,7 +217,7 @@
 //             progress: 100
 //             }
 //         ]
-//     } 
+//     }
 //   },
 // };
 
@@ -253,27 +253,25 @@
 
 // // console.log(getTotalProgressByIteration(students));
 
+// function getTotalProgressByRecursion(data) {
+//     if (Array.isArray(data)) {
+//         let total = 0;
 
+//         for (let i = 0; i < data.length; i++) {
+//           total += data[i].progress;
+//         }
+//         return [total, data.length];
+//     } else {
+//         let total = [0, 0];
 
-function getTotalProgressByRecursion(data) {
-    if (Array.isArray(data)) {
-        let total = 0;
-  
-        for (let i = 0; i < data.length; i++) {
-          total += data[i].progress;
-        }
-        return [total, data.length];
-    } else {
-        let total = [0, 0];
-
-        for (let subData of Object.values(data)) {
-            const subDataArr = getTotalProgressByRecursion(subData);
-            total[0] += subDataArr[0];
-            total[1] += subDataArr[1];
-        }
-        return total;
-    }
-}
+//         for (let subData of Object.values(data)) {
+//             const subDataArr = getTotalProgressByRecursion(subData);
+//             total[0] += subDataArr[0];
+//             total[1] += subDataArr[1];
+//         }
+//         return total;
+//     }
+// }
 
 // const result = getTotalProgressByRecursion(students)[0] / getTotalProgressByRecursion(students)[1];
 
@@ -287,13 +285,10 @@ function getTotalProgressByRecursion(data) {
 //     } else {
 //         return n * factorial(n - 1);
 //     }
-    
+
 // }
-    
 
 //     // return typeof(n) !== 'number' || !Number.isInteger(n) ? "Error" ? n < 0 || n === 0 : n * factorial(n - 1)
-
-
 
 // console.log(factorial(5));
 
@@ -305,7 +300,7 @@ function getTotalProgressByRecursion(data) {
 //       name: 'Alice',
 //       salary: 600
 //     }],
-  
+
 //     development: {
 //       sites: [{
 //         name: 'Peter',
@@ -314,7 +309,7 @@ function getTotalProgressByRecursion(data) {
 //         name: 'Alex',
 //         salary: 1800
 //       }],
-  
+
 //       internals: [{
 //         name: 'Jack',
 //         salary: 1300
@@ -340,8 +335,6 @@ function getTotalProgressByRecursion(data) {
 //   }
 
 //   console.log(salary(company));
-
-
 
 //   function sumTo(n) {
 //     if (n <= 1) {
@@ -383,5 +376,66 @@ function getTotalProgressByRecursion(data) {
 //     }
 //   }
 // printList(list);
-  
+
+// function beginningZeros(text) {
+//   let count = 0;
+//   let arr = text.split("");
+//   for (let i = 0; i <= arr.length; i++) {
+//     if (Number(arr[i]) === 0) {
+//       count++;
+//     } else {
+//       return count;
+//     }
+//   }
+
+// }
+// console.log(beginningZeros("00100"));
+
+// mobile event
+// touchstart
+// touchmove
+// touchend
+// touchenter
+// touchleave
+// touchcancel
+
+// window.addEventListener('DOMContentLoaded', () => {
+
+//     const box = document.querySelector('.box');
+
+//     box.addEventListener('touchstart', (e) => {
+//         e.preventDefault();
+//        console.log('g'); 
+//     //    console.log(e.touches);
+//        console.log(e.targetTouches);
+//     });
+
+    // box.addEventListener('touchmove', (e) => {
+    //     e.preventDefault();
+    //     console.log('move'); 
+    //  });
+
+    //  box.addEventListener('touchend', (e) => {
+    //     e.preventDefault();
+    //     console.log('end'); 
+    //  });
+
+//     const p = document.querySelectorAll('p');
+//     console.log(p);
+    
+// function loadScript(src) {
+//     const script = document.createElement('script');
+//     script.src = src;   
+//     script.async= false; 
+//     document.body.prepend(script);
+// }
+// loadScript('js/js.js');
+// loadScript('js/main.js');
+
+function sumOfDifferences(arr) {
+    arr = arr.sort((a, b) => b - a);
+    console.log(arr);
+     console.log(arr[0] - arr[1]) + (arr[1] - arr[2]);
+ }
+ sumOfDifferences([2, 1, 10]);
 
