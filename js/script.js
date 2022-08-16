@@ -432,10 +432,49 @@
 // loadScript('js/js.js');
 // loadScript('js/main.js');
 
-function sumOfDifferences(arr) {
-    arr = arr.sort((a, b) => b - a);
-    console.log(arr);
-     console.log(arr[0] - arr[1]) + (arr[1] - arr[2]);
- }
- sumOfDifferences([2, 1, 10]);
+// function drawStairs(n) {
+//     let stairs = `I\n`.repeat(n);
+//     // for (let i = 1; i <= n; i++) {
+//     //     stairs += `I\n`;
+//     // }
+//     console.log(stairs);
+// }
+// drawStairs(10);
 
+// function areaOrPer(l , w) {
+//     return l == w ? l * w : l * 2 + w * 2;
+//   }
+//   areaOrPer(10, 10);
+
+// function amountOfPages(summary){
+//     let result = '';
+//     let n = 0;
+
+//     for (let i = 1; i <= summary; i++) {
+//       result += i;
+//       if (result.length === summary) {
+//         n = i;
+//         break;
+//       }
+//     }
+
+//     return n;
+//   }
+//   console.log(amountOfPages(25));
+
+// function isPangram(string) {
+//     console.log(string.split('').includes('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'));
+//  }
+//  isPangram('The quick brown fox jumps over the lazy dog');
+
+// function deepCount(a){
+//     let count = a.length;
+//     for (let i = 0; i < a.length; i++) {
+//         if(Array.isArray(a[i])) {
+//             count += deepCount(a[i]);
+//         }
+//     }
+//     return count;
+// }
+// console.log(deepCount([1, 2, [3, 4, [5]]]));
+   

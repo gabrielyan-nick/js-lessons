@@ -1218,9 +1218,55 @@
 // }
 // countSheep(5);
 
-function sumOfDifferences(arr) {
-   arr = arr.sort((a, b) => b - a);
-   console.log(arr);
-    console.log(arr[0] - arr[1]) + (arr[1] - arr[2]);
-}
-sumOfDifferences([2, 1, 10]);
+// function sumOfDifferences(arr) {
+//    arr = arr.sort((a, b) => b - a);
+//    console.log(arr);
+//     console.log(arr[0] - arr[1]) + (arr[1] - arr[2]);
+// }
+// sumOfDifferences([2, 1, 10]);
+
+// function amountOfPages(summary){
+//     let result = '';
+//     let n = 0;
+
+//     for (let i = 1; i <= summary; i++) {
+//       result += i;
+//       if (result.length === summary) {
+//         n = i;
+//         break;
+//       }
+//     }
+
+//     return n;
+//   }
+//   console.log(amountOfPages(25));
+
+// function deepCount(a){
+//     let count = 0;
+//     a.forEach(item => {
+        
+//         if (item.isArray) {
+//             count = a.length + 1;
+//         } else {
+//             count++;
+//         }
+        
+//     });
+//     return count;
+// }
+// console.log(deepCount(["1", '5', "3", ["10"]]));
+
+// function finalGrade (exam, projects) {
+//     // if (exam > 90 || projects > 10) {
+//     //     return 100;
+//     // } if (exam > 75 && projects > 4) {
+//     //     return 90;
+//     // } if (exam > 50 && projects > 1) {
+//     //     return 75;
+//     // } else {
+//     //     return 0;
+//     // }
+//  return exam > 90 || projects > 10 ? 100 : exam > 75 && projects > 4 ? 90 : exam > 50 && projects > 1 ? 75 : 0;
+
+//   }
+//   console.log(finalGrade(55, 3));
