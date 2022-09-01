@@ -405,28 +405,28 @@
 
 //     box.addEventListener('touchstart', (e) => {
 //         e.preventDefault();
-//        console.log('g'); 
+//        console.log('g');
 //     //    console.log(e.touches);
 //        console.log(e.targetTouches);
 //     });
 
-    // box.addEventListener('touchmove', (e) => {
-    //     e.preventDefault();
-    //     console.log('move'); 
-    //  });
+// box.addEventListener('touchmove', (e) => {
+//     e.preventDefault();
+//     console.log('move');
+//  });
 
-    //  box.addEventListener('touchend', (e) => {
-    //     e.preventDefault();
-    //     console.log('end'); 
-    //  });
+//  box.addEventListener('touchend', (e) => {
+//     e.preventDefault();
+//     console.log('end');
+//  });
 
 //     const p = document.querySelectorAll('p');
 //     console.log(p);
-    
+
 // function loadScript(src) {
 //     const script = document.createElement('script');
-//     script.src = src;   
-//     script.async= false; 
+//     script.src = src;
+//     script.async= false;
 //     document.body.prepend(script);
 // }
 // loadScript('js/js.js');
@@ -477,4 +477,395 @@
 //     return count;
 // }
 // console.log(deepCount([1, 2, [3, 4, [5]]]));
-   
+
+// const box = document.querySelector('.box');
+// const btn = document.querySelector('.btn');
+// let changeColor,
+//     i = 0;
+
+// function qwerty() {
+//     if (i === 1) {
+//         clearInterval(changeColor);
+//     }
+//     if (!q.classList.contains('red_box')) {
+//         q.classList.add('red_box');
+//     } else {
+//         q.classList.remove('red_box');
+//     }
+//     i++;
+// }
+
+// setTimeout(function log() {
+//     console.log('Hello');
+//     setTimeout(log, 500);
+// }, 500);
+
+// btn.addEventListener('click', () =>{
+//     if (!box.classList.contains('box2')) {
+//         box.classList.add('box2');
+//     } else {
+//         box.classList.remove('box2');
+//     }
+// });
+
+// function myAnimation() {
+//     let pos = 0;
+
+//     const id = setInterval(frame, 10);
+//     function frame() {
+//         if (pos == 300) {
+//             clearInterval(id);
+//         } else {
+//             pos++;
+//             box.style.top = pos + 'px';
+//             box.style.left = pos + 'px';
+//         }
+//     }
+// }
+
+// btn.addEventListener('click', myAnimation);
+
+// const now = new Date();
+
+// console.log(now.setHours(30));
+// console.log(now);
+
+// let start = new Date ();
+
+// for (let i = 0; i < 1000000000; i++) {
+//     let some = i ** 2;
+// }
+
+// let end = new Date();
+
+// console.log(`Цикл отработал ${end - start} миллисекунд`);
+
+// const date = new Date();
+
+// function getWeekDay(d) {
+//     d.setFullYear(2022, 7, 27);
+//     return d.getDay() == 0 ? 7 : d.getDay();
+// }
+
+// console.log(getWeekDay(date));
+
+// const now = new Date();
+
+// function getSecondsToday() {
+//     let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+//     let diff = now - today;
+//     return Math.round(diff / 1000);
+// }
+
+// console.log(getSecondsToday());
+
+// function formatDate(date) {
+//     let diff = new Date() - date;
+
+//     if (diff < 1000) {
+//         return "прямо сейчас";
+//     }
+//     let sec = Math.floor(diff / 1000);
+
+//     if (sec < 60) {
+//         return `${sec} сек. назад`;
+//     }
+//     let min = Math.floor(diff / 60000);
+
+//     if (min < 60) {
+//         return `${min} мин. назад`;
+//     }
+
+//     let d = date;
+//     d = [
+//         '0' + d.getDate(),
+//         '0' + (d.getMonth() + 1),
+//         '' + d.getFullYear(),
+//         '0' + d.getHours(),
+//         '0' + d.getMinutes()
+//     ].map(item => item.slice(-2));
+
+//     return d.slice(0, 3).join('.') + ' ' + d.slice(3).join(':');
+
+// }
+// console.log(formatDate(new Date(new Date - 1001)));
+
+// function multipleOfIndex(array) {
+//    let newArr = array.filter((item, i) => {
+//           return Number.isInteger(item / i);
+//       });
+//       console.log(newArr);
+//   }
+
+//   multipleOfIndex([22, -6, 32, 82, 9, 25]);
+
+// function magNumber(info) {
+//   const weapons = {
+//     'PT92': 17,
+//     'M4A1': 30 ,
+//     'M16A2': 30,
+//     'PSG1': 5
+//   };
+
+//   let bullets = info[1] * 3;
+
+//   return Math.ceil(bullets / weapons[info[0]]);
+
+// }
+// console.log(magNumber(["PT92", 6]));
+
+// const btn = document.querySelector("button");
+
+// btn.addEventListener("click", () => {
+//   this.style.backgroundColor = 'green';
+//   console.log(this);
+// });
+
+// const obj = {
+//     num: 5,
+//     sayNamber: function() {
+//         const say = () => {
+//             console.log(this);
+//         };
+//         say();
+//     }
+// };
+
+// obj.sayNamber();
+
+// const double = a => a * 2;
+
+// console.log(double(5));
+
+// class Rectangle {
+//     constructor(height, width) {
+//         this.height = height;
+//         this.width = width;
+//     }
+//     calcArea() {
+//         console.log(this.height * this.width);
+//     }
+//     calcPerimeter() {
+//         console.log(this.height * 2 + this.width * 2);
+//     }
+// }
+
+// class ColoredRectangleWithText extends Rectangle {
+//     constructor(height, width, text, bgColor) {
+//         super(height, width);
+//         this.text = text;
+//         this.bgColor = bgColor;
+//     }
+
+//     showMyProps() {
+//         console.log(`text: ${this.text}, color: ${this.bgColor}`);
+//     }
+// }
+
+// const square = new Rectangle(5, 5);
+// const rectangle = new Rectangle(10, 5);
+// const greenRect = new ColoredRectangleWithText(4, 9, 'qwerty', 'green');
+
+// // console.log(square);
+// // square.calcArea();
+// // rectangle.calcPerimeter();
+// greenRect.showMyProps();
+// greenRect.calcPerimeter();
+
+// function sumArrgs() {
+//     return [].reduce.call(arguments, function(a, b) {
+//         return a + b;
+//     });
+// }
+// console.log(sumArrgs(4, 5, 6));
+
+// const log = function(a, b, ...rest) {
+//     console.log(a, b, rest);
+// };
+
+// log('asd', 'qwe', 'dqw', 'ew', 'rtwet');
+
+// let someObj = {
+//     a: 2,
+//   };
+
+//   let obj = Object.create(someObj, {
+//     b: {
+//       value: 2,
+//     },
+//     c: {
+//       value: 3,
+//       enumerable: true,
+//     },
+//   });
+
+//   let objCopy = Object.assign({}, obj);
+//   console.log(objCopy);
+
+// function nthEven(n){
+//     let arr = [];
+//    for (let i = 0; i <= (n - 1) * 2; i++) {
+
+//     arr[i] = i;
+
+//    }
+//    return arr.pop();
+//   }
+//   console.log(nthEven(100));
+
+// console.log("Запрос дынных");
+
+// const req = new Promise(function (resolve, reject) {
+//   setTimeout(() => {
+//     console.log("Подготовка данных");
+
+//     const product = {
+//       name: "TV",
+//       price: 2000,
+//     };
+//     resolve(product);
+//   }, 2000);
+// });
+
+// req.then((product) => {
+//    return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       product.status = "order";
+//       resolve(product);
+//     }, 2000);
+//   });
+// }).then(data => {
+//     data.modify = true;
+//     return data;
+//   }).then(data => {
+//     console.log(data);
+//   }).catch(() => {
+//     console.error('Error');
+//   }).finally(() => {
+//     console.log('Finally');
+//   });
+
+
+// const test = time => {
+//     return new Promise(resolve => {
+//         setTimeout(() => resolve(), time);
+//     });
+// };
+
+// Promise.all([test(1000), test(2000)]).then(() => {
+//     console.log('All');
+// });
+
+// Promise.race([test(1000), test(2000)]).then(() => {
+//     console.log('All');
+// });
+
+// function delay(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+//     }
+    
+//   delay(3000).then(() => console.log('выполнилось через 3 секунды'));
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   .then(response => response.json())
+//   .then(json => console.log(json));
+
+// const names = ['Ivan', 'Nick', 'Ksenia', 'Voldemar'];
+
+// const shortNames = names.filter(i => {
+//     return i.length < 5;
+// });
+
+// console.log(shortNames);
+
+// const answers = ['IvaN', 'ANnA', 'nicK'];
+
+// const res = answers.map(i => i.toLowerCase());
+
+// console.log(res);
+// console.log(answers);
+
+// const some = ['4', 'efw', 'ew'];
+
+// console.log(some.every(i => typeof(i) === 'string'));
+
+// const arr = ['apple', 'pear', 'plum'];
+
+// const res = arr.reduce((sum, item) => `${sum}, ${item}`, 'ok');
+
+// console.log(res);
+
+// const obj = {
+//     ivan: 'persone',
+//     ann: 'persone',
+//     dog: 'animal',
+//     cat: 'animal'
+// };
+
+// const arr = Object.entries(obj)
+// .filter(i => i[1] === 'persone')
+// .map(i => i[0]);
+
+// console.log(arr);
+
+// const films = [
+//     {
+//         name: 'Titanic',
+//         rating: 9
+//     },
+//     {
+//         name: 'Die hard 5',
+//         rating: 5
+//     },
+//     {
+//         name: 'Matrix',
+//         rating: 8
+//     },
+//     {
+//         name: 'Some bad film',
+//         rating: 4
+//     }
+// ];
+
+// function setFilmsIds(arr) {
+//      arr.map((item, i) => {
+//         item.id = i;
+//     });
+//     return films;
+// }
+
+// const tranformedArray = setFilmsIds(films);
+
+// function checkFilms(arr) {
+//    return arr.every(item => item.id || item.id === 0);
+// }
+// console.log(checkFilms(tranformedArray));
+
+const funds = [
+    {amount: -1400},
+    {amount: 2400},
+    {amount: -1000},
+    {amount: 500},
+    {amount: 10400},
+    {amount: -11400}
+];
+
+const getPositiveIncomeAmount = (data) => {
+    // let sum = 0;
+    // data.forEach(item => {
+    // if (item.amount >= 0) {
+    //     sum += item.amount;
+    // }    
+    // }); 
+    // return sum;
+
+  return data.filter(item => item.amount > 0).reduce((sum, item) => sum + item.amount, 0);
+
+
+
+};
+console.log(getPositiveIncomeAmount(funds));
+
+const getTotalIncomeAmount = (data) => {
+
+};

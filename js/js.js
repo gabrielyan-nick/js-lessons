@@ -1270,3 +1270,125 @@
 
 //   }
 //   console.log(finalGrade(55, 3));
+
+// function defineSuit(card) {
+//     if (card.includes('♣')) {
+//         return "clubs";
+//     } if (card.includes('♦')) {
+//         return "diamonds";
+//   }  if (card.includes('♥')) {
+//     return "hearts";
+// } if (card.includes('♠')) {
+//     return "spades";
+// }   
+// }
+
+// console.log(defineSuit('Q♠'));
+
+// function typeOfSum(a, b) {
+//     return typeof(a + b);
+//   }
+//   console.log(typeOfSum('s', false));
+
+// function arrayPlusArray(arr1, arr2) {
+//     let arr1sum = arr1.reduce((sum, item) => {
+//         return sum + item;
+//     }); 
+
+//     let arr2sum = arr2.reduce((sum, item) => {
+//         return sum + item;
+//     }); 
+
+//     return arr1sum + arr2sum;
+    
+//   }
+//   console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+// function Calculator() {
+//     this.read = function() {
+//          this.a = +prompt('a?', '0');
+//          this.b = +prompt('b?', '0');
+//     };
+//     this.sum = function() {
+//         return this.a + this.b;
+//     };
+//     this.mul = function() {
+//         return this.a * this.b;
+//     };
+// }
+
+// let calculator = new Calculator();
+// calculator.read();
+// alert('Sum = ' + calculator.sum());
+// alert('Mul = ' + calculator.mul());
+
+
+// function Accumulator(startingValue) {
+//     this.value = startingValue;
+//     this.read = function() {
+//         this.value += +prompt('Сколько нужно добавить?', '0');
+//     };
+// }
+// let accumulator = new Accumulator(1);
+
+// accumulator.read(); 
+// accumulator.read(); 
+
+// alert(accumulator.value);
+
+// function otherAngle(a, b) {
+//     return 180 - (a + b);
+//   }
+
+// const reverseSeq = n => {
+//     let res = [];
+//     for (let i = 1; i <= n; i++) {
+//         res.unshift(i);
+//     }
+//     return res;
+//   };
+//   console.log(reverseSeq(2));
+
+// function power(x,y){
+//     let res = 1; 
+//     for (let i = 1; i <= y ; i++) {
+//         res *= x;
+//     }
+//     return res;
+//   }
+//   console.log(power(8, 3));
+
+// function checkTheBucket(bucket){
+//     return bucket.includes('gold');
+//   }
+//   console.log(checkTheBucket(["stone", "stone", "stone", "stone", "gold"]));
+
+// function usdcny(usd) {
+//   return `${(usd * 6.75).toFixed(2)} Chinese Yuan`;
+// }
+// console.log(usdcny(6990));
+
+// const persone = {
+//     name: 'Nick',
+//     tel: '0635895213',
+//     parents: {
+//         mom: 'Larisa',
+//         dad: 'Armen'
+//     }
+// };
+
+// const clone = JSON.parse(JSON.stringify(persone));
+// persone.parents.mom = 'Ann';
+
+// console.log(persone);
+// console.log(clone);
+
+// let obj = {
+//     a: 1,
+//     b: 2,
+//   };
+//   let copy = obj;
+  
+//   copy.a = 5;
+//   console.log(obj.a);
+
+  
