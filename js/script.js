@@ -841,31 +841,23 @@
 // }
 // console.log(checkFilms(tranformedArray));
 
-const funds = [
-    {amount: -1400},
-    {amount: 2400},
-    {amount: -1000},
-    {amount: 500},
-    {amount: 10400},
-    {amount: -11400}
-];
+// const funds = [
+//     {amount: 1400},
+//     {amount: 2400},
+//     {amount: 1000},
+//     {amount: 500},
+//     {amount: 10400},
+//     {amount: 11400}
+// ];
 
-const getPositiveIncomeAmount = (data) => {
-    // let sum = 0;
-    // data.forEach(item => {
-    // if (item.amount >= 0) {
-    //     sum += item.amount;
-    // }    
-    // }); 
-    // return sum;
+// const getPositiveIncomeAmount = (data) => {
 
-  return data.filter(item => item.amount > 0).reduce((sum, item) => sum + item.amount, 0);
+//   return data.filter(item => item.amount > 0).reduce((sum, item) => sum + item.amount, 0);
+// };
 
+// const getTotalIncomeAmount = (data) => {
 
+//     return data.some(item => item.amount < 0) ? data.reduce((sum, item) => sum + item.amount, 0) : getPositiveIncomeAmount(data); 
+//     };
 
-};
-console.log(getPositiveIncomeAmount(funds));
-
-const getTotalIncomeAmount = (data) => {
-
-};
+// console.log(getTotalIncomeAmount(funds));
